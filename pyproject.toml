@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "churn-visualiser"
+version = "0.1.0"
+description = ""
+authors = ["Curtis West <curtis@curtiswest.net>"]
+readme = "README.md"
+packages = [{include = "churn_visualiser"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.20.0"
+plotly = "^5.13.1"
+vaxa-plotly-branding = "^0.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

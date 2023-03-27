@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["Curtis West <curtis@curtiswest.net>"]
 readme = "README.md"
-packages = [{include = "churn_visualiser"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

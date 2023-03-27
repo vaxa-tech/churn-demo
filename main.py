@@ -4,6 +4,8 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
+# noinspection PyUnresolvedReferences
+import vaxa_plotly_branding
 
 st.set_page_config(layout="wide", page_title='Vaxa churn demo',
                    page_icon='♻️', initial_sidebar_state='expanded',
@@ -11,6 +13,9 @@ st.set_page_config(layout="wide", page_title='Vaxa churn demo',
                                'Report a bug': 'https://vaxaanalytics.com/contact-us/',
                                'About': 'https://vaxaanalytics.com/contact-us/'})
 start_date = datetime.datetime.now()
+
+with open("style.css") as css:
+    st.markdown( f'<style>{css.read()}</style>', unsafe_allow_html=True)
 
 # setup sidebar
 st.sidebar.markdown('# Churn simulator')
